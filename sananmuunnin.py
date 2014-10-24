@@ -20,15 +20,15 @@ while True:
 	if(valinta == 1):
 		sana = sana.upper()	
 	elif(valinta == 2):
-		sana = sana.upper()
+		sana = sana.lower()
 	elif(valinta == 3):
-		sana = sana[::1]
+		sana = sana[::-1]
 	elif(valinta == 4):
 		sana = sana.capitalize()
 	else:
-		print("Vireellinen valinta.")
+		print("Virheellinen valinta.")
 
-	print("\nSanasi on nyt: ", end="")
+	print("Sanasi on nyt: " sana, end="")
 	print(sana)	
 	print(25 * "=")
 
