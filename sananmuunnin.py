@@ -11,7 +11,6 @@ while True:
 	if(sana == "0"):
 		break
 
-	# MUU RYHMÄ: KEKSIKÄÄ LISÄÄ TOIMINTOJA
 	print("\nMitä tehdään?\n1) Isot kirjaimet\n2) Pienet kirjaimet\n3) Sana väärinpäin\n4) Iso etukirjain")
 
 
@@ -21,9 +20,9 @@ while True:
 	if(valinta == 1):
 		sana = sana.upper()	
 	elif(valinta == 2):
-		sana = sana.lower()
+		sana = sana.upper()
 	elif(valinta == 3):
-		sana = sana[::-1]
+		sana = sana[::1]
 	elif(valinta == 4):
 		sana = sana.capitalize()
 	else:
